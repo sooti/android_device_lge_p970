@@ -1,2 +1,2 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/nameless_p970.mk
+    $(LOCAL_DIR)/p970.mk
