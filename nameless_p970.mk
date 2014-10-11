@@ -11,14 +11,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 # The gps config appropriate for this device
 $(call inherit-product, device/common/gps/gps_us_supl.mk)
 
-# Get the prebuilt list of APNs
-$(call inherit-product, vendor/nameless/config/apns.mk)
-
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/nameless/config/common.mk)
+$(call inherit-product, vendor/cm/config/common.mk)
 
 $(call inherit-product-if-exists, vendor/lge/p970/p970-vendor.mk)
 
@@ -195,7 +192,7 @@ PRODUCT_PACKAGES += Torch
 
 PRODUCT_AAPT_CONFIG := normal hdpi
 
-PRODUCT_NAME := nameless_p970
+PRODUCT_NAME := cm_p970
 PRODUCT_RELEASE_NAME := OptimusBlack
 PRODUCT_DEVICE := p970
 PRODUCT_BRAND := LGE
