@@ -17,7 +17,6 @@ $(call inherit-product, device/lge/p970/p970.mk)
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from our custom product configuration
 $(call inherit-product, vendor/cm/config/common.mk)
 
 $(call inherit-product-if-exists, vendor/lge/p970/p970-vendor.mk)
