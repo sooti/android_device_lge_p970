@@ -176,7 +176,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Additional Props
 PRODUCT_PROPERTY_OVERRIDES += \
         ro.config.low_ram=true \
-        dalvik.vm.jit.codecachesize=0
+        dalvik.vm.jit.codecachesize=0 \
+        ro.cm.version=A4 \
+        ro.cm.releasetype=AeroiRel \
+        ro.cm.display.version=Aeroi-A4 
+        
+        
 
 # adb root
 ADDITIONAL_DEFAULT_PROPERTIES += \
