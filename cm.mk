@@ -173,16 +173,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
         ro.hwui.text_small_cache_height=64 \
         ro.hwui.texture_cache_size=4 \
 
-# Additional Props
-PRODUCT_PROPERTY_OVERRIDES += \
-        ro.config.low_ram=true \
-        dalvik.vm.jit.codecachesize=0 \
-        ro.cm.version=A4 \
-        ro.cm.releasetype=AeroiRel \
-        ro.cm.display.version=Aeroi-A4 
-        
-        
+# Disable JIT
+PRODUCT_PROPERTY_OVERRIDES += dalvik.vm.jit.codecachesize=0
 
+# Set device as low ram
+PRODUCT_PROPERTY_OVERRIDES += ro.config.low_ram=true
+        
 # adb root
 ADDITIONAL_DEFAULT_PROPERTIES += \
         ro.adb.secure=0 \
