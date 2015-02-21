@@ -36,7 +36,9 @@ PRODUCT_COPY_FILES += \
 
 # init.d scripts
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilt/etc/init.d/10app2sd:system/etc/init.d/10app2sd
+    $(LOCAL_PATH)/prebuilt/etc/init.d/10app2sd:system/etc/init.d/10app2sd \
+    $(LOCAL_PATH)/prebuilt/etc/init.d/07loopy_smoothness_tweak:system/etc/init.d/07loopy_smoothness_tweak \
+    $(LOCAL_PATH)/prebuilt/etc/init.d/99mediaserverkiller:system/etc/init.d/99mediaserverkiller
 
 # Permission files
 PRODUCT_COPY_FILES += \
