@@ -1,8 +1,0 @@
-[
- {
-   "project": "Alphapixels",
-   "repository": "android_kernel_lge_p970",
-   "target_path": "kernel/lge/p970",
-   "branch": "lollipop"
- }
-]
