@@ -14,6 +14,7 @@ on fs
     #swapon_all fstab.black
 
 on init
+    export LD_PRELOAD /system/lib/liblge.so
     export DSP_PATH /system/lib/dsp
     export DEFAULT_BASEIMAGE /system/lib/dsp/baseimage.dof
     export QOSDYN_FILE /system/lib/dsp/qosdyn_3430.dll64P
